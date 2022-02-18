@@ -72,7 +72,7 @@ function NavBar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const classes = useStyles({ searchOpen });
   return (
-    <AppBar>
+    <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" component="h2" className={classes.logoLg}>
           SOCIAL APP
