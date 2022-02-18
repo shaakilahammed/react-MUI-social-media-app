@@ -1,4 +1,5 @@
 import { Grid, makeStyles } from '@material-ui/core';
+import AddPost from './components/AddPost';
 import Feed from './components/Feed';
 import LeftBar from './components/LeftBar';
 import NavBar from './components/NavBar';
@@ -28,6 +29,7 @@ function App() {
           <RightBar />
         </Grid>
       </Grid>
+      <AddPost />
     </div>
   );
 }
