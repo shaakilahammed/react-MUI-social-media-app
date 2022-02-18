@@ -12,6 +12,7 @@ import {
   Snackbar,
   TextField,
   Tooltip,
+  Typography,
 } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -42,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
       width: '100vw',
       height: '100vh',
     },
+  },
+  formTitle: {
+    paddingTop: '10px',
+    textAlign: 'center',
   },
   form: {
     padding: theme.spacing(2),
@@ -85,7 +90,9 @@ function AddPost() {
       </Tooltip>
       <Modal open={modalOpen}>
         <Container className={classes.container}>
-          <h1>Add Post</h1>
+          <Typography variant="h5" element="h4" className={classes.formTitle}>
+            Add Post
+          </Typography>
           <form className={classes.form} autoComplete="off">
             <div className={classes.item}>
               <TextField
